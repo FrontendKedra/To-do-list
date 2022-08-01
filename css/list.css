@@ -18,6 +18,7 @@
 
 .list__button {
 	background-color: green;
+	color: white;
 	border: none;
 	display: grid;
 	justify-content: center;
