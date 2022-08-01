@@ -10,7 +10,7 @@ https://s5zee.github.io/To-do-list/
 
 ## Description
 
-Test Project, contains a site with basic "to do list" with some basic features, for example: adding a new task, marking a task as done, removing a task
+Test Project, contains a "to do list" site with some basic features, for example: adding a new task, marking a task as done, removing a task
 
 ## Tech Used
 
