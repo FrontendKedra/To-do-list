@@ -1,0 +1,30 @@
+.list {
+	padding: 20px;
+	word-break: break-word;
+}
+
+.list__item {
+	border-bottom: 2px solid hsl(0, 0%, 90%);
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 30px 1fr 30px;
+	grid-gap: 10px;
+	align-items: center;
+}
+
+.list__item--done {
+	text-decoration: line-through;
+}
+
+.list__button {
+	background-color: green;
+	border: none;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	height: 30px;
+}
+
+.list__button--remove {
+	background-color: red;
+}
