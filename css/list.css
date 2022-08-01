@@ -17,15 +17,32 @@
 }
 
 .list__button {
-	background-color: green;
+	background-color: hsl(120, 100%, 25%);
 	color: white;
 	border: none;
 	display: grid;
 	justify-content: center;
 	align-content: center;
 	height: 30px;
+	cursor: pointer;
+}
+
+.list__button:hover {
+	background-color: hsl(120, 100%, 32%);
+}
+
+.list__button:active {
+	background-color: hsl(120, 100%, 39%);
 }
 
 .list__button--remove {
-	background-color: red;
+	background-color: hsl(0, 100%, 50%);
+}
+
+.list__button--remove:hover {
+	background-color: hsl(0, 100%, 70%);
+}
+
+.list__button--remove:active {
+	background-color: hsl(0, 100%, 80%);
 }
