@@ -1,5 +1,6 @@
 {
     let tasks = [];
+    let hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
         tasks = [
@@ -52,7 +53,7 @@
         input.focus();
     }
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
@@ -72,6 +73,13 @@
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+    };
+
+    const renderButtons = () => {};
+
+    const render = () => {
+        renderTasks();
+        renderButtons();
 
         bindEvents();
     };
