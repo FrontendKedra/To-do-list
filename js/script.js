@@ -1,11 +1,11 @@
 {
-    const tasks = [];
+    let tasks = [];
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
-
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ]
         render();
     }
 
@@ -41,7 +41,7 @@
     const clearInputValue = () => {
         const input = document.querySelector(".js-newTask");
         input.value = "";
-        
+
         input.focus();
     }
 
