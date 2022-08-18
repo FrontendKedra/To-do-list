@@ -45,7 +45,7 @@
         const markAllTasksDoneButton = document.querySelector(".js-markAllDone");
 
         if (toggleDoneTasksButton) {
-            toggleTaskDone.addEventListener("click", toggleDoneTasks);
+            toggleDoneTasksButton.addEventListener("click", toggleDoneTasks);
         };
 
         if (markAllTasksDoneButton) {
@@ -108,12 +108,13 @@
             buttonsContainer.innerHTML = "";
             return;
         };
+
         buttonsContainer.innerHTML = `
-        <button class="container__button" js-toggleDoneTasks>
+        <button class="container__button js-toggleDoneTasks">
         Pokaż ukończone
         </button>
 
-        <button class="container__button" js-markAllDone>
+        <button class="container__button js-markAllDone">
         Ukończ wszystkie
         </button>
         `;
