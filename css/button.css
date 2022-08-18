@@ -1,9 +1,17 @@
 .form__button {
-    background-color: teal;
+    background-color: hsl(180, 100%, 25%);
     color: #eee;
     border: none;
     padding: 8px;
     cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 30%);
+}
+
+.form__button:active {
+    background-color: hsl(180, 100%, 35%);
 }
 
 .containerButtons {
@@ -19,7 +27,7 @@
 
 .containerButtons__button {
     font-size: large;
-    color: teal;
+    color: hsl(180, 100%, 25%);
     border: none;
     background-color: white;
     padding-left: 20px;
@@ -31,7 +39,15 @@
     }
 }
 
-.container__button:disabled {
+.containerButtons__button:hover {
+    color: hsl(180, 100%, 32%);
+}
+
+.containerButtons__button:active {
+    color: hsl(180, 100%, 40%);
+}
+
+.containerButtons__button:disabled {
     color: grey;
 }
 
