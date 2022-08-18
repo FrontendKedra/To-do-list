@@ -27,6 +27,19 @@
         render();
     };
 
+    const bindButtons = () => {
+        const toggleTasksDoneButton = document.querySelector(".js-toggleDoneTasks");
+        const markAllTasksDoneButton = document.querySelector(".js-markAllDone");
+
+        if (toggleTasksDoneButton) {
+            toggleTaskDone.addEventListener("click", toggleTasksDone);
+        };
+
+        if (markAllTasksDoneButton) {
+            markAllTasksDoneButton.addEventListener("click", markAllTasksDone)
+        };
+    };
+
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -77,8 +90,8 @@
 
     const renderButtons = () => {
         const buttonsContainer = document.querySelector(".js-buttonsContainer");
-        
-        if(tasks.length === 0) {
+
+        if (tasks.length === 0) {
             buttonsContainer.innerHTML = "";
             return;
         };
