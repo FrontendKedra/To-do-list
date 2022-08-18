@@ -27,7 +27,18 @@
         render();
     };
 
+    const toggleTasksDone = () => {
+        hideDoneTasks = !hideDoneTasks;
+        render();
+    };
 
+    const markAllTasksDone = () => {
+        tasks = tasks.map(task => ({
+			...task,
+			done: true,
+		}));
+		render();
+    };
 
     const bindButtons = () => {
         const toggleTasksDoneButton = document.querySelector(".js-toggleDoneTasks");
