@@ -27,7 +27,7 @@
         render();
     };
 
-    const toggleTasksDone = () => {
+    const toggleDoneTasks = () => {
         hideDoneTasks = !hideDoneTasks;
         render();
     };
@@ -41,11 +41,11 @@
     };
 
     const bindButtons = () => {
-        const toggleTasksDoneButton = document.querySelector(".js-toggleDoneTasks");
+        const toggleDoneTasksButton = document.querySelector(".js-toggleDoneTasks");
         const markAllTasksDoneButton = document.querySelector(".js-markAllDone");
 
-        if (toggleTasksDoneButton) {
-            toggleTaskDone.addEventListener("click", toggleTasksDone);
+        if (toggleDoneTasksButton) {
+            toggleTaskDone.addEventListener("click", toggleDoneTasks);
         };
 
         if (markAllTasksDoneButton) {
