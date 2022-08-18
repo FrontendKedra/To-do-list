@@ -10,3 +10,16 @@
     margin: 0;
     padding: 20px;
 }
+
+.section__header--heading {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.section__title {
+    display: grid;
+    margin: 0;
+}
