@@ -27,6 +27,8 @@
         render();
     };
 
+
+
     const bindButtons = () => {
         const toggleTasksDoneButton = document.querySelector(".js-toggleDoneTasks");
         const markAllTasksDoneButton = document.querySelector(".js-markAllDone");
@@ -111,6 +113,7 @@
         renderButtons();
 
         bindEvents();
+        bindButtons();
     };
 
     const onFormSubmit = (event) => {
