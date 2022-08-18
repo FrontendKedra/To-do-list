@@ -29,6 +29,7 @@
 	align-content: center;
 	height: 30px;
 	cursor: pointer;
+	transition: 0.5s;
 }
 
 .list__button:hover {
@@ -50,4 +51,3 @@
 .list__button--remove:active {
 	background-color: hsl(0, 100%, 80%);
 }
-
