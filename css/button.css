@@ -6,13 +6,20 @@
     cursor: pointer;
 }
 
-.container__button {
+.containerButtons {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.containerButtons__button {
     font-size: large;
     color: teal;
     border: none;
     background-color: white;
+    padding-left: 20px;
 }
 
 .container__button:disabled {
     color: grey;
 }
+
