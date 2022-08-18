@@ -34,10 +34,10 @@
 
     const markAllTasksDone = () => {
         tasks = tasks.map(task => ({
-			...task,
-			done: true,
-		}));
-		render();
+            ...task,
+            done: true,
+        }));
+        render();
     };
 
     const bindButtons = () => {
@@ -84,7 +84,7 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li class="list__item">
+            <li class="list__item${task.done && hideDoneTasks ? " list__item--hidden" : ""}">
             <button class="list__button js-done">
             ${task.done ? "✔️" : ""}
             </button>
