@@ -4,14 +4,17 @@
     border: none;
     padding: 8px;
     cursor: pointer;
+    transition: 1s;
 }
 
 .form__button:hover {
     background-color: hsl(180, 100%, 30%);
+    transform: scale(1.06);
 }
 
 .form__button:active {
     background-color: hsl(180, 100%, 35%);
+    transform: scale(1.06);
 }
 
 .containerButtons {
@@ -31,6 +34,7 @@
     border: none;
     background-color: white;
     padding-left: 20px;
+    transition: 0.5s;
 }
 
 @media (max-width: 767px) {
@@ -40,14 +44,13 @@
 }
 
 .containerButtons__button:hover {
-    color: hsl(180, 100%, 32%);
+    color: hsl(180, 100%, 35%);
 }
 
 .containerButtons__button:active {
-    color: hsl(180, 100%, 40%);
+    color: hsl(180, 100%, 45%);
 }
 
 .containerButtons__button:disabled {
     color: grey;
 }
-
