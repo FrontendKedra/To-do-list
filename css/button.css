@@ -7,7 +7,12 @@
 }
 
 .container__button {
+    font-size: large;
     color: teal;
     border: none;
     background-color: white;
+}
+
+.container__button:disabled {
+    color: grey;
 }
