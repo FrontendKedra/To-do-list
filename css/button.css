@@ -5,3 +5,9 @@
     padding: 8px;
     cursor: pointer;
 }
+
+.container__button {
+    color: teal;
+    border: none;
+    background-color: white;
+}
