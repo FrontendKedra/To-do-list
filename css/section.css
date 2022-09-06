@@ -11,7 +11,7 @@
     padding: 20px;
 }
 
-.section__header--heading {
+.section__header--extraContent {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
@@ -20,7 +20,7 @@
 }
 
 @media (max-width: 767px) {
-    .section__header--heading {
+    .section__header--extraContent {
         grid-template-columns: 100%;
     }
 }
