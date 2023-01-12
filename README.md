@@ -6,7 +6,7 @@
 
 ## Demo
 
-https://s5zee.github.io/To-do-list/
+https://frontendkedra.github.io/To-do-list/
 
 ## Description
 
